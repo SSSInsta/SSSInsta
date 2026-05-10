@@ -99,9 +99,9 @@ $(document).ready(function () {
         event.preventDefault(); // Prevent the form from submitting traditionally
 
         $.ajax({
-            url: "/search", // Route to submit the form
-            method: "POST",
-            data: $(this).serialize(), // Serialize the form data
+    url: "https://sssinsta-api.ujjwalrawat0311.workers.dev/search",
+    method: "POST",
+    data: $(this).serialize(), // Serialize the form data
             headers: {
                 "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"), // Include CSRF token
             },
